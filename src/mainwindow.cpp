@@ -31,7 +31,6 @@ void MainWindow::on_brightnessSlider_valueChanged(int value)
   QCameraImageProcessing *imageProcessing = m_camera->imageProcessing();
   if (imageProcessing->isAvailable())
     imageProcessing->setBrightness(value/100.);
-  qInfo() << value/100.;
 }
 
 void MainWindow::on_contrastSlider_valueChanged(int value)
