@@ -10,21 +10,21 @@ class MainWindow;
 
 class MainWindow : public QMainWindow
 {
-    Q_OBJECT
+  Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+  explicit MainWindow(QWidget *parent = 0);
+  ~MainWindow();
 
 private slots:
-    void on_brightnessSlider_valueChanged(int value);
-    void on_contrastSlider_valueChanged(int value);
-    void on_saturationSlider_valueChanged(int value);
+  void on_brightnessSlider_valueChanged(int value);
+  void on_contrastSlider_valueChanged(int value);
+  void on_saturationSlider_valueChanged(int value);
 
 private:
-    Ui::MainWindow *ui;
+  Ui::MainWindow *ui;
 
-    QCamera* m_camera;
+  QCamera* m_camera;
 };
 
 #endif // MAINWINDOW_H
